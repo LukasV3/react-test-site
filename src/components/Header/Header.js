@@ -11,7 +11,7 @@ const Header = () => {
       <div className="header__content">
         <h5 className="header__title">Welcome Heather</h5>
         <p className="header__header">
-          More cash in your wallet<br></br> from everyday shopping
+          More cash in your wallet from everyday shopping
         </p>
         <p className="header__description">
           Shop for things you'd buy anyway with over 3,000 brands - online and
@@ -25,14 +25,6 @@ const Header = () => {
             alt="Arrow right"
           ></img>
         </button>
-
-        {/* <div className="header__img--div">
-          <img
-            className="header__img"
-            src={HeaderImage}
-            alt="User dashboard"
-          ></img>
-        </div> */}
       </div>
     </div>
   )
