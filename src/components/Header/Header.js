@@ -26,6 +26,13 @@ const Header = () => {
           ></img>
         </button>
       </div>
+
+      <div className="gauge">
+        <div className="gauge__body">
+          <div className="gauge__fill"></div>
+          <div className="gauge__cover"></div>
+        </div>
+      </div>
     </div>
   )
 }

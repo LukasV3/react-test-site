@@ -96,6 +96,47 @@
   //   }
 }
 
+.gauge {
+  position: absolute;
+  width: 100%;
+  bottom: -6rem;
+  left: 0;
+
+  &__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 15%;
+    background-color: rgb(173, 173, 173);
+    position: relative;
+    border-top-left-radius: 95% 200%;
+    border-top-right-radius: 95% 200%;
+    overflow: hidden;
+  }
+
+  &__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100rem;
+    background-color: $green;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+
+  &__cover {
+    width: 97%;
+    height: 180%;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   .header {
     padding-left: 6rem;
