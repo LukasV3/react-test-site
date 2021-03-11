@@ -1,2 +1,44 @@
-.hero-section {
+@import "../../styles/global/variables.scss";
+
+.header {
+  background-color: $lightGrey;
+
+  p {
+    color: $darkGrey;
+  }
+
+  img {
+    width: 10rem;
+  }
+
+  button {
+    background: $highlightLight;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  div {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: $highlightLight; /* Old browsers */
+    background: -moz-linear-gradient(
+      -45deg,
+      $highlightLight 0%,
+      $highlightDark 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      $highlightLight 0%,
+      $highlightDark 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      $highlightLight 0%,
+      $highlightDark 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$highlightLight, endColorstr=$highlightDark,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
 }

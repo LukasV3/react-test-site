@@ -5,11 +5,11 @@ import HeaderImage from "../../assets/images/header-image.png"
 
 const Header = () => {
   return (
-    <div>
-      <p className="hero-section">
-        More cash in your wallet from everyday shopping
-      </p>
+    <div className="header">
+      <p>More cash in your wallet from everyday shopping</p>
       <img src={HeaderImage} alt="Site Dashboard"></img>
+      <button>Activate Now</button>
+      <div></div>
     </div>
   )
 }
