@@ -1,5 +1,9 @@
 import React from "react"
+import "../styles/index.scss"
+import HeroSection from "../components/HeroSection/HeroSection"
 
-export default function Home() {
-  return <div>Hello world!</div>
+const IndexPage = () => {
+  return <HeroSection />
 }
+
+export default IndexPage
