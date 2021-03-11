@@ -1,9 +1,10 @@
 import React from "react"
 import "../styles/index.scss"
-import HeroSection from "../components/HeroSection/HeroSection"
+
+import Header from "../components/Header/Header"
 
 const IndexPage = () => {
-  return <HeroSection />
+  return <Header />
 }
 
 export default IndexPage

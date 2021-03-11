@@ -1,12 +1,11 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
+html {
+  font-family: ProbaPro;
+  font-weight: bold;
+  font-size: 2rem;
 }
