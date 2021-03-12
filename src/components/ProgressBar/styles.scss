@@ -12,7 +12,7 @@
   &__body {
     width: 100%;
     height: 0;
-    padding-bottom: 15rem;
+    padding-bottom: 16.5rem;
     background-color: $grey;
     position: relative;
     border-top-left-radius: 95% 200%;
@@ -85,18 +85,25 @@
   }
 }
 
-@media screen and (max-width: 1075px) {
-  .progress-bar {
-    &__body {
-      padding-bottom: 18rem;
-    }
-  }
-}
+// @media screen and (max-width: 1075px) {
+//   .progress-bar {
+//     &__body {
+//       padding-bottom: 18rem;
+//     }
+//   }
+// }
 
-@media screen and (max-width: 600px) {
+// @media screen and (max-width: 600px) {
+//   .progress-bar {
+//     &__body {
+//       padding-bottom: 20rem;
+//     }
+//   }
+// }
+@media screen and (max-height: 800px) {
   .progress-bar {
     &__body {
-      padding-bottom: 20rem;
+      padding-bottom: 13rem;
     }
   }
 }

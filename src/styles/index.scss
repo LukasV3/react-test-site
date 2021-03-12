@@ -38,6 +38,20 @@
   }
 }
 
+@media screen and (max-height: 730px) {
+  .footer {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .app-container {
+    min-height: 100vh;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .footer {
     display: none;

@@ -3,15 +3,15 @@
 .banner {
   width: 100%;
   max-width: 110rem;
-  height: 100%;
+  min-height: 100%;
   color: $darkGrey;
   background-image: url(../../assets/images/header-image.png);
   background-size: 85rem 50rem;
-  background-position-x: 15rem;
+  background-position-x: 20rem;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-rows: 10rem repeat(4, min-content) 20rem;
-  margin-left: 17rem;
+  grid-template-rows: 6rem repeat(4, min-content) 20rem;
+  margin-left: 20rem;
 
   &__title {
     font-size: 1.125rem;
