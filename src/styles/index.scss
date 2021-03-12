@@ -3,8 +3,51 @@
 .app-container {
   background-color: $lightGrey;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   min-width: 180px;
+  position: relative;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(53, 53, 53);
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(53, 53, 53);
+  position: relative;
+  z-index: 110;
+}
+
+@media screen and (min-height: 1000px) {
+  .footer {
+    height: 20vh;
+  }
+
+  .header {
+    height: 20vh;
+  }
+
+  .app-container {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .app-container {
+    min-height: 100vh;
+  }
 }

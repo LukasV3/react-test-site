@@ -3,7 +3,6 @@ import "./styles.scss"
 
 import HeaderImage from "../../assets/images/header-image.png"
 import ArrowRight from "../../assets/svgs/arrow.svg"
-import Wallet from "../../assets/svgs/wallet.svg"
 
 const Banner = () => {
   return (

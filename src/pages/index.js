@@ -6,10 +6,14 @@ import ProgressBar from "../components/ProgressBar/ProgressBar"
 
 const IndexPage = () => {
   return (
-    <div className="app-container">
-      <Banner />
-      <ProgressBar value={0} target={300} />
-    </div>
+    <>
+      <div className="header"></div>
+      <div className="app-container">
+        <Banner />
+        <ProgressBar value={100} target={300} />
+      </div>
+      <div className="footer"></div>
+    </>
   )
 }
 

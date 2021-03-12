@@ -2,15 +2,18 @@
 
 .progress-bar {
   position: absolute;
+  // width: 103.5%;
   width: 100%;
-  bottom: -6rem;
+  // bottom: -5rem;
+  bottom: -5rem;
+  // left: -1.75rem;
   left: 0;
 
   &__body {
     width: 100%;
     height: 0;
-    padding-bottom: 15%;
-    background-color: rgb(173, 173, 173);
+    padding-bottom: 15rem;
+    background-color: $grey;
     position: relative;
     border-top-left-radius: 95% 200%;
     border-top-right-radius: 95% 200%;
@@ -22,10 +25,11 @@
     top: 100%;
     left: 0;
     width: inherit;
+    margin-top: -5rem;
     height: 100rem;
     background-color: $green;
     transform-origin: center top;
-    transform: rotate(0.25turn);
+    transform: rotate(0.15turn);
     transition: transform 0.2s ease-out;
   }
 
@@ -39,12 +43,65 @@
     transform: translateX(-50%);
     background-color: #fff;
   }
+
+  &__display {
+    position: absolute;
+    z-index: 100;
+    top: -4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10.625rem;
+    width: 10.625rem;
+    border-radius: 50%;
+    background: $highlightLight;
+    background: linear-gradient(
+      135deg,
+      $highlightLight 0%,
+      $highlightDark 100%
+    );
+    text-align: center;
+    color: #fff;
+
+    &--icon {
+      width: 2.5rem;
+      margin-top: 1.5rem;
+    }
+
+    &--value {
+      font-weight: 700;
+      font-size: 2.5rem;
+      height: 2.6rem;
+
+      & span {
+        font-weight: 400;
+        font-size: 1.25rem;
+      }
+    }
+
+    &--target {
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .progress-bar {
+    &__body {
+      padding-bottom: 18rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .progress-bar {
+    &__body {
+      padding-bottom: 20rem;
+    }
+  }
 }
 
 //   &__oval {
-//     height: 3rem;
-//     width: 3rem;
-//     border-radius: 50%;
 //     background: $highlightLight; /* Old browsers */
 //     background: -moz-linear-gradient(
 //       -45deg,
