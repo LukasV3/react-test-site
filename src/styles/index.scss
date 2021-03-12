@@ -1,1 +1,10 @@
 @import "./global/index.scss";
+
+.app-container {
+  background-color: $lightGrey;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+}

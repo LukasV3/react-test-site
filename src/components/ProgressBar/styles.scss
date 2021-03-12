@@ -1,0 +1,65 @@
+@import "../../styles/global/variables.scss";
+
+.progress-bar {
+  position: absolute;
+  width: 100%;
+  bottom: -6rem;
+  left: 0;
+
+  &__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 15%;
+    background-color: rgb(173, 173, 173);
+    position: relative;
+    border-top-left-radius: 95% 200%;
+    border-top-right-radius: 95% 200%;
+    overflow: hidden;
+  }
+
+  &__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100rem;
+    background-color: $green;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+
+  &__cover {
+    width: 97%;
+    height: 180%;
+    border-radius: 50%;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
+//   &__oval {
+//     height: 3rem;
+//     width: 3rem;
+//     border-radius: 50%;
+//     background: $highlightLight; /* Old browsers */
+//     background: -moz-linear-gradient(
+//       -45deg,
+//       $highlightLight 0%,
+//       $highlightDark 100%
+//     ); /* FF3.6-15 */
+//     background: -webkit-linear-gradient(
+//       -45deg,
+//       $highlightLight 0%,
+//       $highlightDark 100%
+//     ); /* Chrome10-25,Safari5.1-6 */
+//     background: linear-gradient(
+//       135deg,
+//       $highlightLight 0%,
+//       $highlightDark 100%
+//     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$highlightLight, endColorstr=$highlightDark,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+//   }
