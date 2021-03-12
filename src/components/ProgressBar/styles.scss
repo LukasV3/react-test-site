@@ -2,11 +2,8 @@
 
 .progress-bar {
   position: absolute;
-  // width: 103.5%;
   width: 100%;
-  // bottom: -5rem;
-  bottom: -5rem;
-  // left: -1.75rem;
+  bottom: -3rem;
   left: 0;
 
   &__body {
@@ -21,16 +18,10 @@
   }
 
   &__fill {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: inherit;
-    margin-top: -5rem;
-    height: 100rem;
+    width: 33.3%;
+    height: 20rem;
     background-color: $green;
-    transform-origin: center top;
-    transform: rotate(0.15turn);
-    transition: transform 0.2s ease-out;
+    transition: 0.33s ease-out;
   }
 
   &__cover {

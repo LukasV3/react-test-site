@@ -4,10 +4,26 @@ import "./styles.scss"
 import Wallet from "../../assets/svgs/wallet.svg"
 
 const ProgressBar = ({ value, target }) => {
+  const renderWalletValue = () => {
+    let [pounds, pence] = value.toString().split(".")
+
+    pence = !pence ? "00" : pence
+
+    return (
+      <p className="progress-bar__display--value">
+        £{pounds}
+        <span>.{pence.padStart(2, 0)}</span>
+      </p>
+    )
+  }
+
   return (
     <div className="progress-bar">
       <div className="progress-bar__body">
-        <div className="progress-bar__fill"></div>
+        <div
+          className="progress-bar__fill"
+          style={{ width: `${(value / target) * 100}%` }}
+        ></div>
         <div className="progress-bar__cover"></div>
       </div>
       <div className="progress-bar__display">
@@ -16,10 +32,7 @@ const ProgressBar = ({ value, target }) => {
           src={Wallet}
           alt="Wallet"
         ></img>
-        <p className="progress-bar__display--value">
-          £{value}
-          <span>.00</span>
-        </p>
+        {renderWalletValue()}
         <p className="progress-bar__display--target">Goal: £{target}</p>
       </div>
     </div>
