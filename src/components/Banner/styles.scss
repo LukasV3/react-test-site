@@ -91,6 +91,12 @@
   }
 }
 
+@media screen and (max-height: 615px) {
+  .banner {
+    margin: 2rem 2rem 0 2rem;
+  }
+}
+
 // @media screen and (min-height: 825px) {
 //   .banner {
 //     background-size: 125rem 75rem;

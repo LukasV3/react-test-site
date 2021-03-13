@@ -99,6 +99,14 @@
   }
 }
 
+@media screen and (max-height: 615px) {
+  .progress-bar {
+    &__body {
+      padding-bottom: 10rem;
+    }
+  }
+}
+
 //   &__oval {
 //     background: $highlightLight; /* Old browsers */
 //     background: -moz-linear-gradient(

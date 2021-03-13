@@ -1,0 +1,49 @@
+@import "../../styles/global/variables.scss";
+
+.app-container {
+  background-color: $lightGrey;
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+  position: relative;
+}
+
+.background {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(53, 53, 53);
+  position: relative;
+  z-index: 100;
+}
+
+@media screen and (min-height: 1050px) {
+  .background {
+    height: 20vh;
+  }
+
+  .app-container {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (max-height: 730px) {
+  .background {
+    display: none;
+  }
+
+  .app-container {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .background {
+    display: none;
+  }
+
+  .app-container {
+    min-height: 100vh;
+  }
+}

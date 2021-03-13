@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "../styles/index.scss"
 
+import Layout from "../components/Layout/Layout"
 import Banner from "../components/Banner/Banner"
 import ProgressBar from "../components/ProgressBar/ProgressBar"
 
@@ -26,14 +27,10 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <>
-      <div className="header"></div>
-      <div className="app-container">
-        <Banner firstName={user.firstName} />
-        <ProgressBar value={user.walletValue} target={user.walletTarget} />
-      </div>
-      <div className="footer"></div>
-    </>
+    <Layout>
+      <Banner firstName={user.firstName} />
+      <ProgressBar value={user.walletValue} target={user.walletTarget} />
+    </Layout>
   )
 }
 
