@@ -83,6 +83,12 @@
   }
 }
 
+@media screen and (max-width: 415px) {
+  .progress-bar__body {
+    padding-bottom: 19rem;
+  }
+}
+
 @media screen and (max-height: 615px) {
   .progress-bar__body {
     padding-bottom: 10rem;
