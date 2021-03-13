@@ -22,7 +22,7 @@ const IndexPage = () => {
         // "https://f7d67658-88ff-41a7-bed1-75fdb8bd0797.mock.pstmn.io/user/profile?example=error"
       )
       const data = await res.json()
-      setUser({ ...initialState, ...data })
+      setUser({ ...initialState, ...data }) // in case of server error use initialState values to render firstName and ProgressBar
       setIsLoading(false)
     }
 

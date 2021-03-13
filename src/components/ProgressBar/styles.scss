@@ -37,7 +37,7 @@
 
   &__display {
     position: absolute;
-    z-index: 100;
+    z-index: 50;
     top: -4.75rem;
     left: 50%;
     transform: translateX(-50%);
@@ -83,53 +83,8 @@
   }
 }
 
-// @media screen and (max-width: 1075px) {
-//   .progress-bar {
-//     &__body {
-//       padding-bottom: 18rem;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 600px) {
-//   .progress-bar {
-//     &__body {
-//       padding-bottom: 20rem;
-//     }
-//   }
-// }
-@media screen and (max-height: 800px) {
-  .progress-bar {
-    &__body {
-      padding-bottom: 13rem;
-    }
-  }
-}
-
 @media screen and (max-height: 615px) {
-  .progress-bar {
-    &__body {
-      padding-bottom: 10rem;
-    }
+  .progress-bar__body {
+    padding-bottom: 10rem;
   }
 }
-
-//   &__oval {
-//     background: $highlightLight; /* Old browsers */
-//     background: -moz-linear-gradient(
-//       -45deg,
-//       $highlightLight 0%,
-//       $highlightDark 100%
-//     ); /* FF3.6-15 */
-//     background: -webkit-linear-gradient(
-//       -45deg,
-//       $highlightLight 0%,
-//       $highlightDark 100%
-//     ); /* Chrome10-25,Safari5.1-6 */
-//     background: linear-gradient(
-//       135deg,
-//       $highlightLight 0%,
-//       $highlightDark 100%
-//     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$highlightLight, endColorstr=$highlightDark,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-//   }
