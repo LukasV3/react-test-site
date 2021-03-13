@@ -1,13 +1,12 @@
 import React from "react"
 import "./styles.scss"
 
-import HeaderImage from "../../assets/images/header-image.png"
 import ArrowRight from "../../assets/svgs/arrow.svg"
 
-const Banner = () => {
+const Banner = ({ firstName }) => {
   return (
     <div className="banner">
-      <h5 className="banner__title">Welcome Heather</h5>
+      <h5 className="banner__title">Welcome {firstName}</h5>
       <p className="banner__header">
         More cash in your wallet from everyday shopping
       </p>

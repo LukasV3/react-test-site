@@ -17,9 +17,10 @@ const IndexPage = () => {
     const fetchUser = async () => {
       const res = await fetch(
         "https://f7d67658-88ff-41a7-bed1-75fdb8bd0797.mock.pstmn.io/user/profile?example=success"
+        // "https://f7d67658-88ff-41a7-bed1-75fdb8bd0797.mock.pstmn.io/user/profile?example=error"
       )
       const data = await res.json()
-      setUser(data)
+      setUser({ ...initialState, ...data })
     }
     fetchUser()
   }, [])
@@ -28,7 +29,7 @@ const IndexPage = () => {
     <>
       <div className="header"></div>
       <div className="app-container">
-        <Banner />
+        <Banner firstName={user.firstName} />
         <ProgressBar value={user.walletValue} target={user.walletTarget} />
       </div>
       <div className="footer"></div>

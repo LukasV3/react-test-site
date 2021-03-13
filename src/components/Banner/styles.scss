@@ -7,7 +7,7 @@
   color: $darkGrey;
   background-image: url(../../assets/images/header-image.png);
   background-size: 85rem 50rem;
-  background-position-x: 20rem;
+  background-position-x: 22rem;
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 6rem repeat(4, min-content) 20rem;
@@ -70,12 +70,12 @@
   }
 }
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1140px) {
   .banner {
     display: flex;
     flex-direction: column;
     width: 42rem;
-    background-image: unset;
+    background-image: none;
     margin: 5rem 2rem 0 2rem;
   }
 }
