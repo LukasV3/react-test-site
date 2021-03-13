@@ -13,6 +13,7 @@ const initialState = {
 
 const IndexPage = () => {
   const [user, setUser] = useState(initialState)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -22,14 +23,20 @@ const IndexPage = () => {
       )
       const data = await res.json()
       setUser({ ...initialState, ...data })
+      setIsLoading(false)
     }
+
     fetchUser()
   }, [])
 
   return (
     <Layout>
       <Banner firstName={user.firstName} />
-      <ProgressBar value={user.walletValue} target={user.walletTarget} />
+      <ProgressBar
+        value={user.walletValue}
+        target={user.walletTarget}
+        isLoading={isLoading}
+      />
     </Layout>
   )
 }

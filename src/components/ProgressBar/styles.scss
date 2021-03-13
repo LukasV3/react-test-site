@@ -38,7 +38,7 @@
   &__display {
     position: absolute;
     z-index: 100;
-    top: -4.5rem;
+    top: -4.75rem;
     left: 50%;
     transform: translateX(-50%);
     height: 10.625rem;
@@ -50,12 +50,19 @@
       $highlightLight 0%,
       $highlightDark 100%
     );
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #fff;
 
     &--icon {
       width: 2.5rem;
-      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &--spinner {
+      font-size: 3rem;
     }
 
     &--value {
